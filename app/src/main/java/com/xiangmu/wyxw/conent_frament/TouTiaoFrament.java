@@ -38,6 +38,7 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2015/12/10.
+ * 头条页面
  */
 public class TouTiaoFrament extends Fragment {
     private String url = null;//第一页url

@@ -12,6 +12,7 @@ import com.xiangmu.wyxw.R;
 /**
  * Created by Administrator on 2015/12/12.
  */
+//跟帖页面
 public class Collection_gentie extends Fragment {
     @Nullable
     @Override

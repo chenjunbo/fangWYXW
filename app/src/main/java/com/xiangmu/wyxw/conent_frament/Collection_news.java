@@ -19,6 +19,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2015/12/12.
  */
+//新闻页面
 public class Collection_news extends Fragment {
     private ListView listView;
     List<Collection> myDataList;

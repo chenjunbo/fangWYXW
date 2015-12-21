@@ -31,18 +31,21 @@ import com.xiangmu.wyxw.utils.SharedPreferencesUtil;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 热点页面
+ */
 
 public class Fragment_Top extends Fragment {
     private ListView lv;
     private TextView tv_nobody;
     private RelativeLayout fg_rlayout;
 
-    private HttpUtils httpUtils;
-    private BitmapUtils bitmapUtils;
+    private HttpUtils httpUtils;//网络请求类
+    private BitmapUtils bitmapUtils;//图片加载
     private HttpHandler<String> handler;
-    private String TopUrl;
-    private int page = 0;
-    private TopAdapter topAdapter;
+    private String TopUrl;//热点地址
+    private int page = 0;//当前页数
+    private TopAdapter topAdapter;//adapter
     private List<Top.ArticlesEntity> list = new ArrayList<>();
 
     @Override
@@ -80,6 +83,11 @@ public class Fragment_Top extends Fragment {
         inintData(TopUrl);
         return view;
     }
+
+    /**
+     * 加载数据
+     * @param url
+     */
     private void inintData(String url){
         if (!CommonUtil.isNetWork(getActivity())){
             String result = SharedPreferencesUtil.getData(getActivity(), url, "");
@@ -111,6 +119,11 @@ public class Fragment_Top extends Fragment {
             Toast.makeText(getActivity(), "链接地址有误.........", Toast.LENGTH_SHORT).show();
         }
     }
+
+    /**
+     * 解析数据
+     * @param result
+     */
     private void paserData(String result) {
         Top top = new Gson().fromJson(result, Top.class);
         list = top.articles;

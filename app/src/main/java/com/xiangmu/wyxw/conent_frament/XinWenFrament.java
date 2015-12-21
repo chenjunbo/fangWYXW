@@ -47,6 +47,7 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2015/12/9.
+ * 新闻页面
  */
 public class XinWenFrament extends Fragment implements View.OnClickListener {
     @Override

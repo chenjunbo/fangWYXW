@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.widget.Toast;
-
+//网络状态监听广播
 public class MyReceiver extends BroadcastReceiver {
 
     @Override

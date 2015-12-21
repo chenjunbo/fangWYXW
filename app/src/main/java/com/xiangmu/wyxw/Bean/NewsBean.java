@@ -4,12 +4,12 @@ package com.xiangmu.wyxw.Bean;
  * Created by Administrator on 2015/12/18.
  */
 public class NewsBean {
-    String date;
-    String num;
-    String title;
-    String url;
-    String replaycount;
-    String lanMuType;
+    String date;//日期
+    String num;//数量
+    String title;//标题
+    String url;//地址
+    String replaycount;//评论数量
+    String lanMuType;//类型
 
     public String getDate() {
         return date;

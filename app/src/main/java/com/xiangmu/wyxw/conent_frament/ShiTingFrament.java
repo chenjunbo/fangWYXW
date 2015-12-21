@@ -46,6 +46,7 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2015/12/9.
+ * 试听页面
  */
 public class ShiTingFrament extends Fragment {
     private PullToRefreshListView mListView;

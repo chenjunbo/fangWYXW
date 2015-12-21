@@ -6,12 +6,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
 import com.xiangmu.wyxw.Bean.Collection;
 import com.xiangmu.wyxw.R;
+
 import java.util.List;
 
 /**
  * Created by Administrator on 2015/12/12.
+ *新闻adapter
  */
 public class CollectionNews_adapter extends BaseAdapter {
     private Context context;
@@ -36,23 +39,26 @@ public class CollectionNews_adapter extends BaseAdapter {
     public long getItemId(int position) {
         return position;
     }
-ViewHolder viewHolder;
+
+    ViewHolder viewHolder;
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if (convertView==null){
-            convertView= LayoutInflater.from(context).inflate(R.layout.hgz_collection_news_adapter_item,null);
-            viewHolder=new ViewHolder();
-            viewHolder.name= (TextView) convertView.findViewById(R.id.name);
-            viewHolder.number= (TextView) convertView.findViewById(R.id.number);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(context).inflate(R.layout.hgz_collection_news_adapter_item, null);
+            viewHolder = new ViewHolder();
+            viewHolder.name = (TextView) convertView.findViewById(R.id.name);
+            viewHolder.number = (TextView) convertView.findViewById(R.id.number);
             convertView.setTag(viewHolder);
-        }else {
-            viewHolder= (ViewHolder) convertView.getTag();
+        } else {
+            viewHolder = (ViewHolder) convertView.getTag();
         }
         viewHolder.name.setText(myDataList.get(position).getName());
         viewHolder.number.setText(myDataList.get(position).getNumber());
         return convertView;
     }
-    class ViewHolder{
+
+    class ViewHolder {
         TextView name;
         TextView number;
     }
