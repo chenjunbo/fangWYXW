@@ -1,7 +1,7 @@
 package com.xiangmu.wyxw.Bean;
 
 /**
- * Created by Administrator on 2015/11/18.
+ * Created by Administrator on 2015/12/18.
  */
 public class NewsBean {
     String date;

@@ -74,7 +74,7 @@ public class WebViewActivity extends AppCompatActivity {
             }
         });
         //点击进入跟帖 详细页面
-        //// TODO: 2015/11/14 点击进入跟帖 详细页面 完成
+        //// TODO: 2015/12/14 点击进入跟帖 详细页面 完成
         duotu_gentie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,7 +82,7 @@ public class WebViewActivity extends AppCompatActivity {
             }
         });
         //点击打开扩展 详细页面
-        //// TODO: 2015/11/14
+        //// TODO: 2015/12/14
         caidan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -169,7 +169,7 @@ public class WebViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 popu.dismiss();
-                // TODO: 2015/11/17
+                // TODO: 2015/12/17
 
             }
         });
@@ -178,7 +178,7 @@ public class WebViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 popu.dismiss();
-                // TODO: 2015/11/17
+                // TODO: 2015/12/17
 
                 Toast.makeText(WebViewActivity.this, "截屏...", Toast.LENGTH_SHORT).show();
                 String date_time = DateTime.getDate_Time();
@@ -201,7 +201,7 @@ public class WebViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 popu.dismiss();
-                // TODO: 2015/11/17
+                // TODO: 2015/12/17
                 ZiTiScale.zitiStyle2(WebViewActivity.this, webView);
             }
         });
@@ -210,7 +210,7 @@ public class WebViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 popu.dismiss();
-                // TODO: 2015/11/17
+                // TODO: 2015/12/17
             }
         });
         popu.setContentView(view);

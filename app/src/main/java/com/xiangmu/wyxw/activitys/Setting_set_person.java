@@ -14,7 +14,7 @@ import com.xiangmu.wyxw.Setting_Utils.SearchDB;
 import com.xiangmu.wyxw.conent_frament.SheZhiFrament;
 
 /**
- * Created by Administrator on 2015/11/12.
+ * Created by Administrator on 2015/12/12.
  */
 public class Setting_set_person extends AppCompatActivity implements View.OnClickListener{
     private ImageView backsetting;

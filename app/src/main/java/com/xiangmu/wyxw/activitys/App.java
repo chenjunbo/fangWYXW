@@ -4,7 +4,7 @@ import android.app.Application;
 import android.media.MediaPlayer;
 
 /**
- * Created by Administrator on 2015/11/15.
+ * Created by Administrator on 2015/12/15.
  */
 public class App extends Application {
     public static MediaPlayer mPlayer;

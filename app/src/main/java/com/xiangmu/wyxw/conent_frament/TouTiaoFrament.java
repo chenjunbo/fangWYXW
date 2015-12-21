@@ -37,7 +37,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/11/10.
+ * Created by Administrator on 2015/12/10.
  */
 public class TouTiaoFrament extends Fragment {
     private String url = null;//第一页url
@@ -237,7 +237,7 @@ public class TouTiaoFrament extends Fragment {
             lunbo_yitu.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    // TODO: 2015/11/14
+                    // TODO: 2015/12/14
                     //一个图片的轮播跳转的页面
                     framentlunbo2activity(0);
                 }

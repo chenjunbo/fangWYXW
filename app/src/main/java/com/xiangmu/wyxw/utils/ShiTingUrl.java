@@ -1,7 +1,7 @@
 package com.xiangmu.wyxw.utils;
 
 /**
- * Created by Administrator on 2015/11/18.
+ * Created by Administrator on 2015/12/18.
  */
 public class ShiTingUrl {
     public int stratPage = 0;

@@ -76,7 +76,7 @@ public class ReadHistoryActivity extends AppCompatActivity implements ItemListen
         }
     }
 
-    // TODO: 2015/11/19  //点击进入历史记录的详情页面
+    // TODO: 2015/12/19  //点击进入历史记录的详情页面
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
@@ -111,7 +111,7 @@ public class ReadHistoryActivity extends AppCompatActivity implements ItemListen
             intent.putExtra("xinwendata", xinWenXiData);
             startActivity(intent);
 
-// TODO: 2015/11/18
+// TODO: 2015/12/18
 //          要加动画
             overridePendingTransition(R.anim.right_to_left_in, R.anim.right_to_left_out);
         }

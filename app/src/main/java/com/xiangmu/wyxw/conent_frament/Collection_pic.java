@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.xiangmu.wyxw.R;
 /**
- * Created by Administrator on 2015/11/12.
+ * Created by Administrator on 2015/12/12.
  */
 public class Collection_pic extends Fragment {
     @Nullable

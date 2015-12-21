@@ -10,7 +10,7 @@ import android.graphics.RectF;
 import android.widget.ImageView;
 
 /**
- * Created by Administrator on 2015/11/20.
+ * Created by Administrator on 2015/12/20.
  */
 public class QieYuanTu {
     public static Bitmap getRoundedCornerBitmap(Bitmap bitmap) {

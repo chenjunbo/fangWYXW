@@ -1,7 +1,7 @@
 package com.xiangmu.wyxw.Bean;
 
 /**
- * Created by Administrator on 2015/11/12.
+ * Created by Administrator on 2015/12/12.
  */
 public class Collection {
     private String name;

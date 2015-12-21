@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/11/12.
+ * Created by Administrator on 2015/12/12.
  */
 public class WeatherBean implements Serializable{
 

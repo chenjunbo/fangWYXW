@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/11/13.
+ * Created by Administrator on 2015/12/13.
  */
 public class XinWenXi {
     public static List<PhotosObj> getdata(String data,Context context,int lanmuType){

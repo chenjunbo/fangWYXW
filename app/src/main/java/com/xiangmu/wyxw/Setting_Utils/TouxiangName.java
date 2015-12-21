@@ -11,7 +11,7 @@ import android.widget.EditText;
 import com.xiangmu.wyxw.R;
 
 /**
- * Created by Administrator on 2015/11/11.
+ * Created by Administrator on 2015/12/11.
  */
 public class TouxiangName {
     public static void NiceName(final Context context) {

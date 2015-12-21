@@ -45,7 +45,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/11/9.
+ * Created by Administrator on 2015/12/9.
  */
 public class ShiTingFrament extends Fragment {
     private PullToRefreshListView mListView;
@@ -271,7 +271,7 @@ public class ShiTingFrament extends Fragment {
             holder.mPlayBtnView.setOnClickListener(new MyOnclick(mp4_url, holder.mVideoViewLayout, position));
             holder.mVideoViewLayout.setVideoPlayCallback(new MyVideoPlayCallback(holder.mPlayBtnView, holder.mVideoViewLayout));
 
-            // TODO: 2015/11/19 分享
+            // TODO: 2015/12/19 分享
             holder.iv_share.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

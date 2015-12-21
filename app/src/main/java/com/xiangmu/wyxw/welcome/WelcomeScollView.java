@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import android.widget.ScrollView;
 
 /**
- * Created by Administrator on 2015/11/18.
+ * Created by Administrator on 2015/12/18.
  */
 public class WelcomeScollView extends ScrollView {
     ScrollViewListener scrollViewListener;

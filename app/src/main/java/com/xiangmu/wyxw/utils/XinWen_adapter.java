@@ -1,7 +1,7 @@
 package com.xiangmu.wyxw.utils;
 
 /**
- * Created by Administrator on 2015/11/13.
+ * Created by Administrator on 2015/12/13.
  */
 public class XinWen_adapter {
     public final static int TYPE_putong = 0;
@@ -58,7 +58,7 @@ public class XinWen_adapter {
         } else if (daoHangtitle.equals("游戏")){
             return youxi;
         }
-        // TODO: 2015/11/14
+        // TODO: 2015/12/14
         return toutiao;
     }
 }

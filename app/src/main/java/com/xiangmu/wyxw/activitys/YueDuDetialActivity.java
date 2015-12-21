@@ -191,15 +191,15 @@ public class YueDuDetialActivity extends AppCompatActivity implements View.OnCli
             case R.id.back://返回箭头
                 YueDuDetialActivity.this.finish();
                 break;
-            case R.id.title_gentie:// TODO: 2015/11/12 (跟帖) 完成
+            case R.id.title_gentie:// TODO: 2015/12/12 (跟帖) 完成
                 startActivity(new Intent(YueDuDetialActivity.this, GenTieActivity.class));
                 overridePendingTransition(R.anim.zcdh_set_in, R.anim.zcdh_alpha_out);
                 break;
-            case R.id.iv_writeGenTie:// TODO: 2015/11/12 (跟帖)
+            case R.id.iv_writeGenTie:// TODO: 2015/12/12 (跟帖)
                 startActivity(new Intent(YueDuDetialActivity.this, GenTieActivity.class));
                 overridePendingTransition(R.anim.zcdh_set_in, R.anim.zcdh_alpha_out);
                 break;
-            case R.id.tv_writeGenTie:// TODO: 2015/11/12 (跟帖)
+            case R.id.tv_writeGenTie:// TODO: 2015/12/12 (跟帖)
                 startActivity(new Intent(YueDuDetialActivity.this, GenTieActivity.class));
                 overridePendingTransition(R.anim.zcdh_set_in, R.anim.zcdh_alpha_out);
                 break;
@@ -207,16 +207,16 @@ public class YueDuDetialActivity extends AppCompatActivity implements View.OnCli
                 startActivity(new Intent(YueDuDetialActivity.this, GenTieActivity.class));
                 overridePendingTransition(R.anim.zcdh_set_in, R.anim.zcdh_alpha_out);
                 break;
-            case R.id.share:// TODO: 2015/11/12 (加分享) 分享的标题:title;分享链接 DetialUrl; 分享的图片链接src; 分享的具体内容:body;
+            case R.id.share:// TODO: 2015/12/12 (加分享) 分享的标题:title;分享链接 DetialUrl; 分享的图片链接src; 分享的具体内容:body;
                 ShareUtils.shareContent(this, title, src);
                 break;
-            case R.id.pengypuquan:// TODO: 2015/11/12 (分享到朋友圈)分享的标题:title;分享链接 DetialUrl; 分享的图片链接src; 分享的具体内容:body;
+            case R.id.pengypuquan:// TODO: 2015/12/12 (分享到朋友圈)分享的标题:title;分享链接 DetialUrl; 分享的图片链接src; 分享的具体内容:body;
                 ShareUtils.shareWeiXin(this, title, src);
                 break;
-            case R.id.qq:// TODO: 2015/11/12 (qq) 分享的标题:title;分享链接 DetialUrl; 分享的图片链接src; 分享的具体内容:body;
+            case R.id.qq:// TODO: 2015/12/12 (qq) 分享的标题:title;分享链接 DetialUrl; 分享的图片链接src; 分享的具体内容:body;
                 ShareUtils.shareQQFriend(this, title, src);
                 break;
-            case R.id.qq_zone:// TODO: 2015/11/12 (分享到qq空间)分享的标题:title;分享链接 DetialUrl; 分享的图片链接src; 分享的具体内容:body;
+            case R.id.qq_zone:// TODO: 2015/12/12 (分享到qq空间)分享的标题:title;分享链接 DetialUrl; 分享的图片链接src; 分享的具体内容:body;
                 ShareUtils.shareQQZore(this, title, src);
                 break;
             case R.id.more:
@@ -254,7 +254,7 @@ public class YueDuDetialActivity extends AppCompatActivity implements View.OnCli
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.bt_save:// TODO: 2015/11/14  数据库收藏
+            case R.id.bt_save:// TODO: 2015/12/14  数据库收藏
                 popupWindow.dismiss();
                 Toast.makeText(YueDuDetialActivity.this, bt_save.getText(), Toast.LENGTH_SHORT).show();
                 if (bt_save.getText().equals("收藏")) {
@@ -266,7 +266,7 @@ public class YueDuDetialActivity extends AppCompatActivity implements View.OnCli
                 }
                 break;
 
-            case R.id.bt_yejian:// TODO: 2015/11/14  夜间
+            case R.id.bt_yejian:// TODO: 2015/12/14  夜间
                 popupWindow.dismiss();
                 if (bt_yejian.getText().equals("夜间模式")) {
                     bt_yejian.setText("日间模式");
@@ -276,7 +276,7 @@ public class YueDuDetialActivity extends AppCompatActivity implements View.OnCli
                     Toast.makeText(YueDuDetialActivity.this, bt_yejian.getText(), Toast.LENGTH_SHORT).show();
                 }
                 break;
-            case R.id.jieping:// TODO: 2015/11/14 截屏
+            case R.id.jieping:// TODO: 2015/12/14 截屏
                 popupWindow.dismiss();
                 Toast.makeText(YueDuDetialActivity.this, "截屏...", Toast.LENGTH_SHORT).show();
                 String date_time = DateTime.getDate_Time();
@@ -293,7 +293,7 @@ public class YueDuDetialActivity extends AppCompatActivity implements View.OnCli
                 intent.putExtra("path", s);
                 startActivity(intent);
                 break;
-            case R.id.ziti:// TODO: 2015/11/14 字体
+            case R.id.ziti:// TODO: 2015/12/14 字体
                 popupWindow.dismiss();
                 ZiTiScale.zitiStyle2(this, webView);
                 break;

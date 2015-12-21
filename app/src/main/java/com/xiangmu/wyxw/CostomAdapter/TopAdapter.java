@@ -18,7 +18,7 @@ import java.util.List;
 
 
 /**
- * Created by Administrator on 2015/11/13.
+ * Created by Administrator on 2015/12/13.
  */
 public class TopAdapter extends BaseAdapter{
     private List<Top.ArticlesEntity> list;
@@ -87,7 +87,7 @@ public class TopAdapter extends BaseAdapter{
         viewHoudle.shangtoutiao_share = (LinearLayout) view.findViewById(R.id.shangtoutiao_share);
         viewHoudle.shangtoutiao_share.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {// TODO: 2015/11/13 加分享
+            public void onClick(View view) {// TODO: 2015/12/13 加分享
 //                Toast.makeText(context, "----" + i, Toast.LENGTH_SHORT).show();
                 ShareUtils.shareContent(context,"#"+list.get(i).topicname+"#"+"\n"+entity.city+"\n"+entity.body,entity.imgsrc);
             }

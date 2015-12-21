@@ -1,7 +1,7 @@
 package com.xiangmu.wyxw.utils;
 
 /**
- * Created by Administrator on 2015/11/13.
+ * Created by Administrator on 2015/12/13.
  */
 public class XinWenURL {
     public int stratPage = 0;

@@ -80,14 +80,14 @@ public class XinWenXiActivity extends AppCompatActivity {
                 finish();
             }
         });
-        //// TODO: 2015/11/14        //点击进入跟帖 详细页面  完成
+        //// TODO: 2015/12/14        //点击进入跟帖 详细页面  完成
         duotu_gentie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(XinWenXiActivity.this,GenTieActivity.class));
             }
         });
-        //// TODO: 2015/11/14         //点击打开扩展 详细页面
+        //// TODO: 2015/12/14         //点击打开扩展 详细页面
         caidan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -194,7 +194,7 @@ public class XinWenXiActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 popu.dismiss();
-                // TODO: 2015/11/17
+                // TODO: 2015/12/17
             }
         });
         //截屏按钮
@@ -202,7 +202,7 @@ public class XinWenXiActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 popu.dismiss();
-                // TODO: 2015/11/17
+                // TODO: 2015/12/17
                 Toast.makeText(XinWenXiActivity.this, "截屏...", Toast.LENGTH_SHORT).show();
                 String date_time = DateTime.getDate_Time();
                 File file = new File("sdcard/Photo/Screenshots/");
@@ -225,7 +225,7 @@ public class XinWenXiActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 popu.dismiss();
-                // TODO: 2015/11/17
+                // TODO: 2015/12/17
 
 
             }
@@ -235,7 +235,7 @@ public class XinWenXiActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 popu.dismiss();
-                // TODO: 2015/11/17
+                // TODO: 2015/12/17
             }
         });
         popu.setContentView(view);

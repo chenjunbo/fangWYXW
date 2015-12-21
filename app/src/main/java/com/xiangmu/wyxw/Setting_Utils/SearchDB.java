@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /**
- * Created by Administrator on 2015/11/16.
+ * Created by Administrator on 2015/12/16.
  */
 public class SearchDB {
 

@@ -11,7 +11,7 @@ import com.xiangmu.wyxw.texturevideo.VideoMediaController;
 import com.xiangmu.wyxw.texturevideo.VideoSuperPlayer;
 
 /**
- * Created by Administrator on 2015/11/16.
+ * Created by Administrator on 2015/12/16.
  */
 public class FullActivity extends Activity {
     VideoSuperPlayer video;

@@ -158,7 +158,7 @@ public class WeatherActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.weather_location:
                 Toast.makeText(this, "请选择城市", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.weather_share:// TODO: 2015/11/14 加分享 分享链接
+            case R.id.weather_share:// TODO: 2015/12/14 加分享 分享链接
                 ShareUtils.shareContent(this,"冒泡天气指数预报:数据来自中国天气 http://www.weather.com.cn/weather1d/101180101.shtml"+"\n"+"分享当前郑州天气:" + "今日:"+date+"\n"+"PM2.5:"+pm25+"\n"+"天气状况:"+weather+" "+wind,"http://img3.imgtn.bdimg.com/it/u=1318680829,3666649020&fm=21&gp=0.jpg");
                 break;
         }

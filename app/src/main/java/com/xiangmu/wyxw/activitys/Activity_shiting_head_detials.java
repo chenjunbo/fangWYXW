@@ -37,7 +37,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/11/18.
+ * Created by Administrator on 2015/12/18.
  */
 public class Activity_shiting_head_detials extends Activity {
     private ListView mListView;

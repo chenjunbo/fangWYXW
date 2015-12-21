@@ -3,7 +3,7 @@ package com.xiangmu.wyxw.utils;
 import java.io.Serializable;
 
 /**
- * Created by Administrator on 2015/11/13.
+ * Created by Administrator on 2015/12/13.
  * 新闻跳转详细页面的工具类
  */
 public class XinWenXiData implements Serializable{

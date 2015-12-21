@@ -209,7 +209,7 @@ public class ShangTouTiao_HuiGuDetialActivity extends AppCompatActivity implemen
                 }
                 Toast.makeText(this, "正在刷新中...", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.share://TODO: 2015/11/14 加分享  详情地址:DetialUrl;标题:topicName;内容:topicDesc;图片连接 imageurl
+            case R.id.share://TODO: 2015/12/14 加分享  详情地址:DetialUrl;标题:topicName;内容:topicDesc;图片连接 imageurl
                 popupWindow.dismiss();
                 ShareUtils.shareContent(this,"# " + topicName + " #"+"\n"+topicDesc,imageurl);
                 break;

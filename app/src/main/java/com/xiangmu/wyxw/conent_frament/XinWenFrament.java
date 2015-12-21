@@ -46,7 +46,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/11/9.
+ * Created by Administrator on 2015/12/9.
  */
 public class XinWenFrament extends Fragment implements View.OnClickListener {
     @Override
@@ -377,7 +377,7 @@ public class XinWenFrament extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(), SecondCodeActivity.class));
                 break;
             case R.id.friends:
-                popupWindow.dismiss();// TODO: 2015/11/20 加分享 标题:冒泡新闻,世界在你手中,快来加入 一起耍吧......
+                popupWindow.dismiss();// TODO: 2015/12/20 加分享 标题:冒泡新闻,世界在你手中,快来加入 一起耍吧......
                 //下载url:http://111.7.131.58/cache/file.ws.126.net/3g/client/netease_newsreader_android.apk?ich_args=41a669ccfae7d6b13b8232b12ec14f7b_1_0_0_3_b1a290dba9ce2d0e3b8de77017b2708b15b4d38e478ad92fd821f1c1174d1238_8a18af6a7bc5c9d6dfdd82240a39a902_1_0&ich_ip=
                 ShareUtils.shareContent(getActivity(), "冒泡新闻,世界在你手中,快来加入 一起耍吧......","http://www.mobipop.cn/style002/images/logo.png");
                 break;

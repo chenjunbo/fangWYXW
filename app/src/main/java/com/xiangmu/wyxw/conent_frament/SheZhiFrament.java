@@ -31,7 +31,7 @@ import com.xiangmu.wyxw.activitys.Setting_headpage;
 import com.xiangmu.wyxw.activitys.Setting_my_Task;
 import com.xiangmu.wyxw.activitys.Setting_set_page;
 /**
- * Created by Administrator on 2015/11/9.
+ * Created by Administrator on 2015/12/9.
  */
 public class SheZhiFrament extends Fragment implements View.OnClickListener {
     //判断是否登录,获得登录后,阅读的篇数;
@@ -155,7 +155,7 @@ public class SheZhiFrament extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            // TODO: 2015/11/18 头像
+            // TODO: 2015/12/18 头像
             case R.id.picture:
                 Log.e("------------->", "点击登陆成功后" + flag);
                 if (flag) {
@@ -169,13 +169,13 @@ public class SheZhiFrament extends Fragment implements View.OnClickListener {
                     getActivity().overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 }
                 break;
-            // TODO: 2015/11/18  设置
+            // TODO: 2015/12/18  设置
             case R.id.setting:
                 Intent intent3 = new Intent(getActivity(), Setting_set_page.class);
                 startActivity(intent3);
                 getActivity().overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 break;
-            // TODO: 2015/11/18  登录名称(立即登录)
+            // TODO: 2015/12/18  登录名称(立即登录)
             case R.id.userName:
                 if (flag) {
                     Intent intent4 = new Intent(getActivity(), Setting_headpage.class);
@@ -187,11 +187,11 @@ public class SheZhiFrament extends Fragment implements View.OnClickListener {
                     getActivity().overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 }
                 break;
-            // TODO: 2015/11/18 用户等级名称
+            // TODO: 2015/12/18 用户等级名称
             case R.id.userlevel:
 
                 break;
-            // TODO: 2015/11/18 阅读量
+            // TODO: 2015/12/18 阅读量
             case R.id.read:
                 Intent intent5 = new Intent(getContext(), ReadChievement.class);
                 intent5.putExtra("number", number);
@@ -202,31 +202,31 @@ public class SheZhiFrament extends Fragment implements View.OnClickListener {
                 manager.addToBackStack(null);
                 manager.commit();
                 break;
-            // TODO: 2015/11/18 阅读量
+            // TODO: 2015/12/18 阅读量
             case R.id.read_number:
 
                 break;
-            // TODO: 2015/11/18 收藏条数
+            // TODO: 2015/12/18 收藏条数
             case R.id.collect_number:
 
                 break;
-            // TODO: 2015/11/18 跟帖次数
+            // TODO: 2015/12/18 跟帖次数
             case R.id.gentie_number:
 
                 break;
-            // TODO: 2015/11/18 金币数量
+            // TODO: 2015/12/18 金币数量
 //            case R.id.gold_number:
 ////                if (!flag) {
 ////                    goldNumber.setEnabled(true);
 ////                    jinbiCount.setText("5");
 ////                }
 //                break;
-            // TODO: 2015/11/18 阅读  加动画
+            // TODO: 2015/12/18 阅读  加动画
             case R.id.reader:
                 startActivity(new Intent(getActivity(), ReadHistoryActivity.class));
 
                 break;
-            // TODO: 2015/11/18 收藏
+            // TODO: 2015/12/18 收藏
             case R.id.collect:
                 if (flag) {
                     Intent intent6 = new Intent(getActivity(), Setting_Collection.class);
@@ -238,11 +238,11 @@ public class SheZhiFrament extends Fragment implements View.OnClickListener {
                     getActivity().overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 }
                 break;
-            // TODO: 2015/11/18 跟帖  完成
+            // TODO: 2015/12/18 跟帖  完成
             case R.id.Thread:
                 startActivity(new Intent(getActivity(),GenTieActivity.class));
                 break;
-            // TODO: 2015/11/18 金币
+            // TODO: 2015/12/18 金币
             case R.id.gold:
                 if (flag) {
                     Intent intent4 = new Intent(getActivity(), Setting_GlodPage.class);
@@ -254,14 +254,14 @@ public class SheZhiFrament extends Fragment implements View.OnClickListener {
                     getActivity().overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 }
                 break;
-            // TODO: 2015/11/18 我的消息
+            // TODO: 2015/12/18 我的消息
             case R.id.myMessage:
 
                 break;
             case R.id.messageText:
 
                 break;
-            // TODO: 2015/11/18 金币商城
+            // TODO: 2015/12/18 金币商城
             case R.id.goldMall:
                 Intent intent17 = new Intent(getActivity(), Setting_glodmall.class);
                 startActivity(intent17);
@@ -285,14 +285,14 @@ public class SheZhiFrament extends Fragment implements View.OnClickListener {
             case R.id.myTaskText:
 
                 break;
-            // TODO: 2015/11/18 我的钱包
+            // TODO: 2015/12/18 我的钱包
             case R.id.myWallet:
 
                 break;
             case R.id.myWalletText:
 
                 break;
-            // TODO: 2015/11/18 我的邮箱
+            // TODO: 2015/12/18 我的邮箱
             case R.id.mymailbox:
 
                 break;

@@ -8,7 +8,7 @@ import android.view.View;
 import java.io.FileOutputStream;
 
 /**
- * Created by Administrator on 2015/11/18.
+ * Created by Administrator on 2015/12/18.
  */
 public class ScreenShot {
     public static Bitmap takeScreenShot(Activity activity) {

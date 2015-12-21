@@ -3,7 +3,7 @@ package com.xiangmu.wyxw.Bean;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/11/16.
+ * Created by Administrator on 2015/12/16.
  */
 public class SearchBean {
 

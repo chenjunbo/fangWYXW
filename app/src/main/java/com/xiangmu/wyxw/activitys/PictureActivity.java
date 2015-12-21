@@ -85,14 +85,14 @@ public class PictureActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                // TODO: 2015/11/18  加动画  左至右
+                // TODO: 2015/12/18  加动画  左至右
                 //加动画  左至右
             }
         });
         findViewById(R.id.loginimage_share).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2015/11/18  加动画  左至右
+                // TODO: 2015/12/18  加动画  左至右
                 //点击分享  开始截图  存储   并将图片分享出去
                 Bitmap bitmap1 = takeScreenShot();
                 picpath = path + "涂鸦.png";
@@ -112,7 +112,7 @@ public class PictureActivity extends AppCompatActivity {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            // TODO: 2015/11/18 添加分享功能  地址为 picpath
+            // TODO: 2015/12/18 添加分享功能  地址为 picpath
 //            picpath 为成员变量能直接用  分享成功后销毁本页面
             ShareUtils.shareContent(PictureActivity.this, "跟帖截屏,值得一看哦!", picpath);
 

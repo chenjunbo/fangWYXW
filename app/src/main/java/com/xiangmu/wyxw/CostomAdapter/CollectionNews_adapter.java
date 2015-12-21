@@ -11,7 +11,7 @@ import com.xiangmu.wyxw.R;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/11/12.
+ * Created by Administrator on 2015/12/12.
  */
 public class CollectionNews_adapter extends BaseAdapter {
     private Context context;

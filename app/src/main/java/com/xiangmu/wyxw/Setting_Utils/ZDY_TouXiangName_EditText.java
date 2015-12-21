@@ -10,7 +10,7 @@ import android.view.MotionEvent;
 import android.widget.EditText;
 
 /**
- * Created by Administrator on 2015/11/11.
+ * Created by Administrator on 2015/12/11.
  */
 public class ZDY_TouXiangName_EditText extends EditText {
     //这是EditText右边图片

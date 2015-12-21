@@ -14,7 +14,7 @@ import com.xiangmu.wyxw.R;
 import com.xiangmu.wyxw.Setting_Utils.ZiTiScale;
 
 /**
- * Created by Administrator on 2015/11/12.
+ * Created by Administrator on 2015/12/12.
  */
 public class Setting_set_page extends AppCompatActivity implements View.OnClickListener {
     ImageView backlogin;
@@ -114,11 +114,11 @@ public class Setting_set_page extends AppCompatActivity implements View.OnClickL
             case R.id.chajianset:
 
                 break;
-            // TODO: 2015/11/18 字体
+            // TODO: 2015/12/18 字体
             case R.id.typeset:
 
                 break;
-            // TODO: 2015/11/19 字体大小
+            // TODO: 2015/12/19 字体大小
             case R.id.textSize:
                 ZiTiScale.zitiStyle2(this, new WebView(this));
                 break;

@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 
 /**
- * Created by Administrator on 2015/11/14.
+ * Created by Administrator on 2015/12/14.
  */
 public class TouTiaoViewPager extends ViewPager {
 

@@ -16,7 +16,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by Administrator on 2015/11/16.
+ * Created by Administrator on 2015/12/16.
  */
 public class VideoMediaController extends FrameLayout implements
         SeekBar.OnSeekBarChangeListener, View.OnClickListener {

@@ -21,7 +21,7 @@ import com.xiangmu.wyxw.R;
 import com.xiangmu.wyxw.activitys.YueDuDetialActivity;
 
 /**
- * Created by Administrator on 2015/11/10.
+ * Created by Administrator on 2015/12/10.
  */
 public class XutilsGetData {
     //数据存储的名字

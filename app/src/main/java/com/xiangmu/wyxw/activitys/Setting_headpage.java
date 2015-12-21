@@ -30,7 +30,7 @@ import com.xiangmu.wyxw.conent_frament.SheZhiFrament;
 import java.io.File;
 
 /**
- * Created by Administrator on 2015/11/12.
+ * Created by Administrator on 2015/12/12.
  */
 public class Setting_headpage extends AppCompatActivity {
     ImageView back;
@@ -86,19 +86,19 @@ public class Setting_headpage extends AppCompatActivity {
 
     public void OnClick(View view) {
         switch (view.getId()) {
-            // TODO: 2015/11/18   返回设置
+            // TODO: 2015/12/18   返回设置
             case R.id.back:
                 overridePendingTransition(R.anim.push_left_out, R.anim.push_left_in);
                 finish();
                 break;
-            // TODO: 2015/11/18 我的标签
+            // TODO: 2015/12/18 我的标签
             case R.id.mylable:
                 Intent intent1 = new Intent(this, Setting_biaoqianPage.class);
                 startActivity(intent1);
                 overridePendingTransition(R.anim.push_left_out, R.anim.push_left_in);
                 finish();
                 break;
-            // TODO: 2015/11/18 头像
+            // TODO: 2015/12/18 头像
             case R.id.header:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 Log.e("---------->", "header");

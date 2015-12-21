@@ -1,7 +1,7 @@
 package com.xiangmu.wyxw.utils;
 
 /**
- * Created by Administrator on 2015/11/9.
+ * Created by Administrator on 2015/12/9.
  */
 public interface ServerURL {
     //阅读相关

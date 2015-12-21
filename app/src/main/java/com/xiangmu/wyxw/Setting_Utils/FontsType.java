@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.WindowManager;
 
 /**
- * Created by Administrator on 2015/11/11.
+ * Created by Administrator on 2015/12/11.
  */
 public class FontsType {
     //字体的

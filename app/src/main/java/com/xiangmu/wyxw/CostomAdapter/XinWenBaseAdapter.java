@@ -17,7 +17,7 @@ import com.xiangmu.wyxw.utils.XutilsGetData;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/11/11.
+ * Created by Administrator on 2015/12/11.
  */
 public class XinWenBaseAdapter extends BaseAdapter {
     //头条数据的listview的adapter

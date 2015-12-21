@@ -25,7 +25,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * Created by Administrator on 2015/11/15.
+ * Created by Administrator on 2015/12/15.
  */
 public class VideoSuperPlayer extends RelativeLayout implements
         TextureView.SurfaceTextureListener {

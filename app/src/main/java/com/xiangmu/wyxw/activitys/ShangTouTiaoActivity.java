@@ -199,7 +199,7 @@ public class ShangTouTiaoActivity extends AppCompatActivity implements View.OnCl
                 getSupportFragmentManager().beginTransaction().replace(R.id.content, new Fragment_Top()).commit();
                 Toast.makeText(this, "正在刷新中...", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.share://TODO: 2015/11/14 加分享 标题:topicName; 内容:topicDesc; 图片连接:imgsrc
+            case R.id.share://TODO: 2015/12/14 加分享 标题:topicName; 内容:topicDesc; 图片连接:imgsrc
                 popupWindow.dismiss();
                 ShareUtils.shareContent(this, "# " + topicName + " #" + "\n" + topicDesc, imgsrc);
                 break;

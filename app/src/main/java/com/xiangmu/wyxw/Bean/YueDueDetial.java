@@ -1,7 +1,7 @@
 package com.xiangmu.wyxw.Bean;
 
 /**
- * Created by Administrator on 2015/11/11.
+ * Created by Administrator on 2015/12/11.
  */
 public class YueDueDetial {
 

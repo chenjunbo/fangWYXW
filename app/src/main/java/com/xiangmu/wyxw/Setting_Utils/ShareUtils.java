@@ -14,7 +14,7 @@ import com.umeng.socialize.sso.UMQQSsoHandler;
 import com.umeng.socialize.weixin.controller.UMWXHandler;
 
 /**
- * Created by Administrator on 2015/11/18.
+ * Created by Administrator on 2015/12/18.
  */
 public class ShareUtils {
     private static UMSocialService umSocialService=UMServiceFactory.getUMSocialService("com.xiangmu.wyxw.conent_frament");;
