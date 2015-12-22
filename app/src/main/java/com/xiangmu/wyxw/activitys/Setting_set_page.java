@@ -15,26 +15,27 @@ import com.xiangmu.wyxw.Setting_Utils.ZiTiScale;
 
 /**
  * Created by Administrator on 2015/12/12.
+ * 设置页面
  */
 public class Setting_set_page extends AppCompatActivity implements View.OnClickListener {
-    ImageView backlogin;
+    ImageView backlogin;//返回按钮
     LinearLayout set, personal_set;
-    TextView email, huancun, banbenhao;
-    RelativeLayout bangdingpingtai;
-    RelativeLayout chajianset;
-    RelativeLayout typeset;
-    RelativeLayout textSize;
-    RelativeLayout newspush;
-    RelativeLayout wifiOffline;
-    RelativeLayout wifinoloading;
-    RelativeLayout more_loading;
-    RelativeLayout phone_cleancache;
-    RelativeLayout isupdate;
-    RelativeLayout helpfankui;
-    RelativeLayout yingyongtuijian;
+    TextView email, huancun, banbenhao;//邮箱,缓存 版本号
+    RelativeLayout bangdingpingtai;//绑定平台
+    RelativeLayout chajianset;//插件设置
+    RelativeLayout typeset;//类型设置
+    RelativeLayout textSize;//文字设置
+    RelativeLayout newspush;//新闻推送
+    RelativeLayout wifiOffline;//wifi状态
+    RelativeLayout wifinoloading;//wifi加载数据
+    RelativeLayout more_loading;//加载更富哦
+    RelativeLayout phone_cleancache;//清除缓存
+    RelativeLayout isupdate;//更新
+    RelativeLayout helpfankui;//帮助
+    RelativeLayout yingyongtuijian;//推荐
     RelativeLayout weiwangyipingfen;
-    RelativeLayout fengmiangushi;
-    RelativeLayout about;
+    RelativeLayout fengmiangushi;///封面故事
+    RelativeLayout about;//关于
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,9 @@ public class Setting_set_page extends AppCompatActivity implements View.OnClickL
         initView();
     }
 
+    /**
+     * 初始化所有界面控件
+     */
     private void initView() {
         backlogin = (ImageView) findViewById(R.id.backlogin);
         set = (LinearLayout) findViewById(R.id.set);
@@ -69,6 +73,9 @@ public class Setting_set_page extends AppCompatActivity implements View.OnClickL
         listenerEvent();
     }
 
+    /**
+     * 设置事件监听
+     */
     private void listenerEvent() {
         backlogin.setOnClickListener(this);
         set.setOnClickListener(this);

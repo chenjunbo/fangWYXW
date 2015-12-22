@@ -23,12 +23,15 @@ import com.xiangmu.wyxw.utils.DateTime;
 
 import java.util.ArrayList;
 
+/**
+ * 图片显示页面
+ */
 public class PictureActivity extends AppCompatActivity {
     private int onclicitem;
     private LinearLayout linearLayout;
-    private ArrayList<Drawable> arrayList;
+    private ArrayList<Drawable> arrayList;//显示的图片集合
     private ArrayList<String> stringList;
-    private ImageView imageShow;
+    private ImageView imageShow;//显示图片的控件
     private TextView text;
     private String path;
 
@@ -45,7 +48,7 @@ public class PictureActivity extends AppCompatActivity {
         } else {
             path = DateTime.getDate_Time();
         }
-        if (arrayList == null) {
+        if (arrayList == null) {//添加资源
             arrayList = new ArrayList();
             arrayList.add(getResources().getDrawable(R.drawable.naodong_1));
             arrayList.add(getResources().getDrawable(R.drawable.naodong_2));

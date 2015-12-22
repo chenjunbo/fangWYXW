@@ -38,10 +38,11 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2015/12/18.
+ * 试听头详情页面
  */
 public class Activity_shiting_head_detials extends Activity {
     private ListView mListView;
-    private boolean isPlaying;
+    private boolean isPlaying;//是不是正在播放
     private int indexPostion = -1;
     private MAdapter mAdapter;
     private HttpUtils httpUtils;
@@ -73,7 +74,7 @@ public class Activity_shiting_head_detials extends Activity {
             }
         });
     }
-
+//加载数据,首先缓存,然后网络
     private void initdata() {
         String result = SharedPreferencesUtil.getData(this, ServerURL.shiTingUrl, "");  //共享参数缓存  首先从缓存中获取数据,
         if (!TextUtils.isEmpty(result)) {//如果缓存有数据,直接Gson解析
@@ -202,7 +203,7 @@ public class Activity_shiting_head_detials extends Activity {
                 this.mPlayBtnView = mPlayBtnView;
                 this.mSuperVideoPlayer = mSuperVideoPlayer;
             }
-
+        //关闭视频时调用
             @Override
             public void onCloseVideo() {
                 isPlaying = false;
@@ -228,12 +229,12 @@ public class Activity_shiting_head_detials extends Activity {
             }
 
         }
-
+        //自定义点击事件
         class MyOnclick implements View.OnClickListener {
             String url;
             VideoSuperPlayer mSuperVideoPlayer;
             int position;
-
+            //构造方法
             public MyOnclick(String url, VideoSuperPlayer mSuperVideoPlayer,
                              int position) {
                 this.url = url;

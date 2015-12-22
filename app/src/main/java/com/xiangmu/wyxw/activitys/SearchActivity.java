@@ -45,17 +45,20 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 搜素
+ */
 public class SearchActivity extends AppCompatActivity {
     // Content View Elements
-    private ImageButton back;
-    private TextView noHotWords;
-    private ImageView clear_history;
-    private LinearLayout layoutsearchResult;
-    private RelativeLayout layout_sousuoHis;
-    private PullToRefreshListView lv_searchResult;
-    private SearchView search_view;
+    private ImageButton back;//返回
+    private TextView noHotWords;//搜索热词
+    private ImageView clear_history;//清除历史按钮
+    private LinearLayout layoutsearchResult;//返回结果区域
+    private RelativeLayout layout_sousuoHis;//搜索历史区域
+    private PullToRefreshListView lv_searchResult;//返回的结果listview
+    private SearchView search_view;//搜索框
     private GridView houtWord_gridview;
-    private GridView gv_searchHistory;
+    private GridView gv_searchHistory;//搜索历史
     private MyGridViewAadapter gridViewAadapter;
     private List<String> list = new ArrayList<>();
     private HttpUtils httpUtils;

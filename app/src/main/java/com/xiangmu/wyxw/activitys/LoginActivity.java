@@ -37,19 +37,26 @@ import com.xiangmu.wyxw.utils.Utils;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * 登陆页面
+ */
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
-    private ImageView loginback;
-    private TextView login_password_back,register;
-    private Button login_button;
-    private LinearLayout weixin_login,qq_login,xinlang_login;
-    private EditText login_zhanghao,login_password;
-    UMSocialService mController;
+    private ImageView loginback;//返回
+    private TextView login_password_back,register;//找回密码 注册按钮
+    private Button login_button;//登陆
+    private LinearLayout weixin_login,qq_login,xinlang_login;//第三方登陆
+    private EditText login_zhanghao,login_password;//账号密码
+    UMSocialService mController;//U盟服务
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initView();
     }
+
+    /**
+     * 初始化界面控件
+     */
     private void initView() {
         login_password_back = (TextView) findViewById(R.id.login_password_back);//找回密码
         register = (TextView) findViewById(R.id.register);//注册
@@ -70,7 +77,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         UMQQSsoHandler qqSsoHandler = new UMQQSsoHandler(this, "1104966900",
                 "voYmRxQSvtpCnGUE");
         qqSsoHandler.addToSocialSDK();
-
+        /**
+         * 设置点击事件
+         */
         loginback.setOnClickListener(this);
         weixin_login.setOnClickListener(this);
         qq_login.setOnClickListener(this);
@@ -78,7 +87,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         login_button.setOnClickListener(this);
         login_password_back.setOnClickListener(this);
         register.setOnClickListener(this);
-
+            //设置账号输入框文本变化监听
         login_zhanghao.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -91,6 +100,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
             @Override
             public void afterTextChanged(Editable s) {
+                //根据输入的文本来变化登陆按钮的显示效果
                 String s1 = login_password.getText().toString().trim();
                 String s2 = s.toString().trim();
                 if (!"".equals(s1) && !"".equals(s2)) {
@@ -103,6 +113,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
             }
         });
+        //密码输入框文本监听
         login_password.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

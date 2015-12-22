@@ -3,10 +3,8 @@ package com.xiangmu.wyxw.activitys;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -17,10 +15,13 @@ import com.xiangmu.wyxw.R;
 import com.xiangmu.wyxw.utils.Md5Utils;
 import com.xiangmu.wyxw.utils.MySqlOpenHelper;
 
+/**
+ * 修改密码
+ */
 public class UpdaterActivity extends AppCompatActivity implements View.OnClickListener {
-    ImageView loginimage_back;
-    EditText password1,password2;
-    LinearLayout updater;
+    ImageView loginimage_back;//返回到登陆
+    EditText password1,password2;//新密码 确认密码
+    LinearLayout updater;//更新
     String number;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

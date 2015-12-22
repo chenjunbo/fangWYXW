@@ -3,11 +3,8 @@ package com.xiangmu.wyxw.activitys;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -25,11 +22,14 @@ import com.xiangmu.wyxw.utils.XinWenXiData;
 
 import java.util.ArrayList;
 
+/**
+ * 阅读历史列表页面
+ */
 public class ReadHistoryActivity extends AppCompatActivity implements ItemListener, AdapterView.OnItemClickListener {
 
-    private CalendarView calendarView;
-    private ListView listView;
-    private ArrayList<NewsBean> arrayList;
+    private CalendarView calendarView;//日历
+    private ListView listView;//显示列表
+    private ArrayList<NewsBean> arrayList;//数据源
     private MyReadAdapter adapter;
 
     @Override
@@ -38,16 +38,21 @@ public class ReadHistoryActivity extends AppCompatActivity implements ItemListen
         setContentView(R.layout.activity_read_history);
 //        日历  在本页面中
         calendarView = (CalendarView) findViewById(R.id.view);
-        calendarView.setItemListener(this);
+        calendarView.setItemListener(this);//用于选择日期
         listView = (ListView) findViewById(R.id.listView);
-        String date = DateTime.getDate();
-        arrayList = getlistDate(date);
+        String date = DateTime.getDate();//获取选择的时间
+        arrayList = getlistDate(date);//根据时间获取数据
 
         adapter = new MyReadAdapter();
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
     }
 
+    /**
+     * 获取所有的阅读过的日期
+     * @param date
+     * @return
+     */
     public ArrayList getlistDate(String date) {
         arrayList = new ArrayList();
         MySqlOpenHelper mySqlOpenHelper = new MySqlOpenHelper(this);

@@ -8,7 +8,7 @@ import android.util.Log;
 /**
  * Created by Administrator on 2015/12/18.
  */
-public class MyPost {
+public class  MyPost {
     MySqlOpenHelper mySqlOpenHelper;
     Context context;
     public MyPost(Context context) {

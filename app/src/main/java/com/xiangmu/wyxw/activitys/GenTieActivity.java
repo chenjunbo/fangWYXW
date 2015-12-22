@@ -1,6 +1,8 @@
 package com.xiangmu.wyxw.activitys;
 
+import android.annotation.TargetApi;
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -22,12 +24,15 @@ import com.xiangmu.wyxw.R;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 跟帖页面
+ */
 public class GenTieActivity extends AppCompatActivity {
-    private ListView listView;
+    private ListView listView;//评论列表
     private TextView textView;
     private android.view.animation.Animation animation;
     private List list;
-    private View mNightView = null;
+    private View mNightView = null;//夜间模式
     private WindowManager mWindowManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +52,9 @@ public class GenTieActivity extends AppCompatActivity {
         listView.setAdapter(new MyListAdapter());
     }
 
+    /**
+     * 评论列表adapter
+     */
     class MyListAdapter extends BaseAdapter {
 
         @Override
@@ -64,6 +72,7 @@ public class GenTieActivity extends AppCompatActivity {
             return position;
         }
 
+        @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
         @Override
         public View getView(final int position, View convertView, ViewGroup parent) {
             if (convertView == null) {
@@ -75,6 +84,7 @@ public class GenTieActivity extends AppCompatActivity {
             imageView.setBackground(getResources().getDrawable(R.drawable.biz_news_list_other_segments_support));
             imageView.setEnabled(true);
             imageView.setOnClickListener(new View.OnClickListener() {
+                @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
                 @Override
                 public void onClick(View v) {
                     RelativeLayout relativeLayout = (RelativeLayout) v.getParent();
@@ -105,7 +115,7 @@ public class GenTieActivity extends AppCompatActivity {
                             View view = View.inflate(GenTieActivity.this, R.layout.gentie_huifu_item, null);
                             if (i == 0) {
                                 TextView textView = (TextView) view.findViewById(R.id.in_info);
-                                textView.setText("吐槽者....死!!!!!!!!!!!");
+                                textView.setText("额,你就只会吐槽吗?");
                             }
                             TextView num = (TextView) view.findViewById(R.id.item_num);
                             num.setText("" + (i + 1));
@@ -117,7 +127,7 @@ public class GenTieActivity extends AppCompatActivity {
                             View view = View.inflate(GenTieActivity.this, R.layout.gentie_huifu_item, null);
                             if (i == 0) {
                                 TextView textView = (TextView) view.findViewById(R.id.in_info);
-                                textView.setText("吐槽者....死!!!!!!!!!!!");
+                                textView.setText("额,你就只会吐槽吗?");
                             }
                             TextView num = (TextView) view.findViewById(R.id.item_num);
                             num.setText("" + (i + 1));
@@ -129,7 +139,7 @@ public class GenTieActivity extends AppCompatActivity {
                             View view = View.inflate(GenTieActivity.this, R.layout.gentie_huifu_item, null);
                             if (i == 0) {
                                 TextView textView = (TextView) view.findViewById(R.id.in_info);
-                                textView.setText("吐槽者....死!!!!!!!!!!!");
+                                textView.setText("额,你就只会吐槽吗?");
                             }
                             TextView num = (TextView) view.findViewById(R.id.item_num);
                             num.setText("" + (i + 1));
@@ -141,7 +151,7 @@ public class GenTieActivity extends AppCompatActivity {
                             View view = View.inflate(GenTieActivity.this, R.layout.gentie_huifu_item, null);
                             if (i == 0) {
                                 TextView textView = (TextView) view.findViewById(R.id.in_info);
-                                textView.setText("吐槽者....死!!!!!!!!!!!");
+                                textView.setText("额,你就只会吐槽吗?");
                             }
                             TextView num = (TextView) view.findViewById(R.id.item_num);
                             num.setText("" + (i + 1));
@@ -153,7 +163,7 @@ public class GenTieActivity extends AppCompatActivity {
                             View view = View.inflate(GenTieActivity.this, R.layout.gentie_huifu_item, null);
                             if (i == 0) {
                                 TextView textView = (TextView) view.findViewById(R.id.in_info);
-                                textView.setText("吐槽者....死!!!!!!!!!!!");
+                                textView.setText("额,你就只会吐槽吗?");
                             }
                             TextView num = (TextView) view.findViewById(R.id.item_num);
                             num.setText("" + (i + 1));

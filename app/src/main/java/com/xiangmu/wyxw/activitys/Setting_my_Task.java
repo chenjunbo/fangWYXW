@@ -60,33 +60,33 @@ public class Setting_my_Task extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.backsetting:
+            case R.id.backsetting://返回到设置
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 finish();
                 break;
-            case R.id.duihuan:
+            case R.id.duihuan://兑换物品
                 Intent intent1 = new Intent(this, Setting_glodmall.class);
                 startActivity(intent1);
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 break;
-            case R.id.open_client:
+            case R.id.open_client://打开客户端
                 Intent intent2 = new Intent(this, Task_ShuoMing.class);
                 startActivity(intent2);
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 break;
-            case R.id.fabiao:
+            case R.id.fabiao://发布说明
                 Intent intent3 = new Intent(this, Task_ShuoMing.class);
                 startActivity(intent3);
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 break;
-            case R.id.share:
+            case R.id.share://分享
                 Intent intent4 = new Intent(this, Task_ShuoMing.class);
                 startActivity(intent4);
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 break;
-            case R.id.xinshang:
+            case R.id.xinshang://欣赏
                 Intent intent5 = new Intent(this, Task_ShuoMing.class);
                 startActivity(intent5);
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
@@ -96,7 +96,7 @@ public class Setting_my_Task extends AppCompatActivity implements View.OnClickLi
                 startActivity(intent6);
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
                 break;
-            case R.id.read_news:
+            case R.id.read_news://看新闻
                 Intent intent7 = new Intent(this, Task_ShuoMing.class);
                 startActivity(intent7);
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);

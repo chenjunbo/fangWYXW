@@ -35,6 +35,9 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 微信分享返回页面
+ */
 public class XinWenXiActivity extends AppCompatActivity {
 
     @Override

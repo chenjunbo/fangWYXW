@@ -38,10 +38,13 @@ import com.xiangmu.wyxw.utils.SharedPreferencesUtil;
 
 import java.util.List;
 
+/**
+ * 回顾
+ */
 public class ShangTouTiao_HuiGuDetialActivity extends AppCompatActivity implements View.OnClickListener {
-    private ImageButton back;
-    private ImageButton more;
-    private ScrollView huigu_scrollView;
+    private ImageButton back;//返回
+    private ImageButton more;//更多
+    private ScrollView huigu_scrollView;//回顾列表
     private ImageView mimgsrc;
     private TextView mtopicName;
     private TextView mtopicDesc;
@@ -119,9 +122,9 @@ public class ShangTouTiao_HuiGuDetialActivity extends AppCompatActivity implemen
 
     //加载更多
     public void onclick(View view) {
-        LogUtils.e("---page", ""+page);
+        LogUtils.e("---page", "" + page);
         page = page + 10;
-        LogUtils.e("---page", ""+page);
+        LogUtils.e("---page", "" + page);
         DetialUrl = ServerURL.HuiGuDetialUrl + topicid + "/" + page + "-" + (page + 10) + ".html";
         LogUtils.e("---", DetialUrl);
         getData(DetialUrl);
@@ -132,11 +135,12 @@ public class ShangTouTiao_HuiGuDetialActivity extends AppCompatActivity implemen
         LogUtils.e("---url", url);
         String result = SharedPreferencesUtil.getData(this, url, "");
         if (!TextUtils.isEmpty(result)) {
-                paserData(result);
+            paserData(result);
         }
         getData(url);
     }
 
+    //网络加载数据
     private void getData(final String url) {
         if (!url.equals("")) {
             progressDialog.show();
@@ -161,10 +165,11 @@ public class ShangTouTiao_HuiGuDetialActivity extends AppCompatActivity implemen
     List<Top.ArticlesEntity> list;
     String imageurl, topicName, topicDesc;
 
+    //解析数据
     private void paserData(String result) {
         Top top = new Gson().fromJson(result, Top.class);
         list = top.articles;
-        if (list.size()>0){
+        if (list.size() > 0) {
             imageurl = top.imgsrc;
             topicName = top.topicName;
             topicDesc = top.topicDesc;
@@ -185,7 +190,7 @@ public class ShangTouTiao_HuiGuDetialActivity extends AppCompatActivity implemen
             }
             progressDialog.dismiss();
             CommonUtil.setListViewHeightBasedOnChildren(mlv);
-        }else {
+        } else {
             tv_nobody2.setVisibility(View.VISIBLE);
         }
 
@@ -211,7 +216,7 @@ public class ShangTouTiao_HuiGuDetialActivity extends AppCompatActivity implemen
                 break;
             case R.id.share://TODO: 2015/12/14 加分享  详情地址:DetialUrl;标题:topicName;内容:topicDesc;图片连接 imageurl
                 popupWindow.dismiss();
-                ShareUtils.shareContent(this,"# " + topicName + " #"+"\n"+topicDesc,imageurl);
+                ShareUtils.shareContent(this, "# " + topicName + " #" + "\n" + topicDesc, imageurl);
                 break;
             case R.id.quxiao:
                 popupWindow.dismiss();
@@ -224,20 +229,21 @@ public class ShangTouTiao_HuiGuDetialActivity extends AppCompatActivity implemen
     Button share;
     Button quxiao;
 
+    //初始化弹出窗口
     private void initPopWindow(View view) {
         int width = (int) (getWindowManager().getDefaultDisplay().getWidth() / 2.5);
         int height = getWindowManager().getDefaultDisplay().getHeight() / 3;
         popupWindow = new PopupWindow(width, height);
-        View popwindow_more = View.inflate(this, R.layout.popwindow_more, null);
-        popupWindow.setContentView(popwindow_more);
+        View popwindow_more = View.inflate(this, R.layout.popwindow_more, null);//加载布局
+        popupWindow.setContentView(popwindow_more);//设置界面布局
         //点击空白区关闭窗口
-        popupWindow.setFocusable(true);
+        popupWindow.setFocusable(true);//不可取消
         popupWindow.setBackgroundDrawable(new ColorDrawable(0));
         popupWindow.showAsDropDown(view, 0, 0);
         refresh = (Button) popwindow_more.findViewById(R.id.refresh);
         share = (Button) popwindow_more.findViewById(R.id.share);
         quxiao = (Button) popwindow_more.findViewById(R.id.quxiao);
-        refresh.setOnClickListener(this);
+        refresh.setOnClickListener(this);//设置点击事件
         share.setOnClickListener(this);
         quxiao.setOnClickListener(this);
     }

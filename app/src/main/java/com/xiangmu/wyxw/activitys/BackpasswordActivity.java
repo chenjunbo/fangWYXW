@@ -3,10 +3,8 @@ package com.xiangmu.wyxw.activitys;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -18,16 +16,23 @@ import com.xiangmu.wyxw.utils.Md5Utils;
 import com.xiangmu.wyxw.utils.MySqlOpenHelper;
 import com.xiangmu.wyxw.utils.Utils;
 
+/**
+ * 找回密码页面
+ */
 public class BackpasswordActivity extends AppCompatActivity implements View.OnClickListener {
     ImageView loginimage_back;
-    EditText number;
-    LinearLayout next;
+    EditText number;//号码
+    LinearLayout next;//下一步
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_backpassword);
         initView();
     }
+
+    /**
+     * 初始化控件
+     */
     private void initView() {
         loginimage_back = (ImageView) findViewById(R.id.loginimage_back);//返回按钮
         number = (EditText) findViewById(R.id.number);//要更改的手机号

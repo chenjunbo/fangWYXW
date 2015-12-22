@@ -19,10 +19,13 @@ import com.xiangmu.wyxw.utils.Md5Utils;
 import com.xiangmu.wyxw.utils.MySqlOpenHelper;
 import com.xiangmu.wyxw.utils.Utils;
 
+/**
+ * 注册账号页面
+ */
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
-    ImageView loginimage_back;
-    EditText login_zhanghao,login_passwoed;
-    TextView registerbutton;
+    ImageView loginimage_back;//返回按钮
+    EditText login_zhanghao,login_passwoed;//账号密码
+    TextView registerbutton;//注册按钮
     LinearLayout line;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_register);
         initView();
     }
+
+    /**
+     * 初始化所有的控件
+     */
     private void initView() {
         loginimage_back = (ImageView) findViewById(R.id.loginimage_back);
         login_zhanghao = (EditText) findViewById(R.id.login_zhanghao);
@@ -41,14 +48,19 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         registerbutton.setOnClickListener(this);
         line.setOnClickListener(this);
     }
+
+    /**
+     * 点击事件
+     * @param v
+     */
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.loginimage_back:
+            case R.id.loginimage_back://返回
                 finish();
                 overridePendingTransition(R.anim.left_to_right_in, R.anim.left_to_right_out);
                 break;
-            case R.id.registerbutton:
+            case R.id.registerbutton://注册
                 String name = login_zhanghao.getText().toString().trim();
                 String password = login_passwoed.getText().toString().trim();
                 if ("".equals(name) || "".equals(password)) {

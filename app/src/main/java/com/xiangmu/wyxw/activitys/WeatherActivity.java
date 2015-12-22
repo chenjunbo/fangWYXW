@@ -16,6 +16,9 @@ import com.xiangmu.wyxw.Setting_Utils.ShareUtils;
 
 import java.util.List;
 
+/**
+ * 天气页面
+ */
 public class WeatherActivity extends AppCompatActivity implements View.OnClickListener {
     private ImageButton mWeather_back;
     private ImageButton mWeather_location;
